@@ -12,9 +12,10 @@
       <slot />
     </div>
   </body>
+  <!-- HTMLでのコメントはこうです -->
 </html>
 
-<style>
+<style is:global>
   html,
   body {
     margin: 0;
@@ -28,5 +29,10 @@
   }
   #container {
     margin: auto;
+  }
+  a, /* aタグ */
+  a:visited /* aタグ(訪問後) を同時に指定 */ {
+    color: rgb(114, 114, 207);
+    text-decoration: none; /* 下線消し消し委員会 */
   }
 </style>
